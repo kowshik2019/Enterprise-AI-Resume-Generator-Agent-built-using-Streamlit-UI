@@ -1,0 +1,48 @@
+# ============================================================
+# Enterprise AI Resume Generator Agent System
+# Requirements File — Full Stack (FastAPI + Streamlit)
+# ============================================================
+
+# ============================================================
+# CORE API FRAMEWORK
+# FastAPI — high-performance web framework for building APIs
+# Uvicorn — ASGI server to run FastAPI in production
+# ============================================================
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+
+# ============================================================
+# AI / LLM
+# OpenAI Python SDK — connects all 4 agents to GPT-4o-mini
+# httpx — HTTP client used internally by OpenAI SDK
+# ============================================================
+openai==1.30.1
+httpx==0.27.0
+
+# ============================================================
+# DATA VALIDATION
+# Pydantic — validates and parses all incoming request bodies
+# ============================================================
+pydantic==2.7.1
+
+# ============================================================
+# ENVIRONMENT CONFIGURATION
+# python-dotenv — reads OPENAI_API_KEY and APP_API_KEY from .env
+# ============================================================
+python-dotenv==1.0.1
+
+# ============================================================
+# STREAMLIT FRONTEND
+# streamlit — builds the web UI form and result display
+# requests — used by Streamlit to call the FastAPI backend
+# ============================================================
+streamlit==1.35.0
+requests==2.31.0
+
+# ============================================================
+# STANDARD LIBRARY (no install needed — included with Python)
+# os         — reads environment variables
+# json       — parses OpenAI JSON responses
+# logging    — writes log messages to console
+# datetime   — timestamps every log entry
+# ============================================================
