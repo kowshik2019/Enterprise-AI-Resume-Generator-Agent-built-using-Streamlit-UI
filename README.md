@@ -13,7 +13,7 @@ Writes a polished, professional resume Reviews it for grammar, consistency, and 
 
 Architecture (All Required Stages) Here is the flow your main.py must follow, stage by stage:
 
-APP INITIALIZATION → Create FastAPI app, set title/version
+APP INITIALIZATION → Create StreamlitUI app, set title/version
 SECURITY CONFIG → API Key auth via HTTP header (X-API-Key)
 REQUEST MODEL → Pydantic model for incoming user profile
 LOGGING FUNCTION → log_step() writes to logs.txt + console
